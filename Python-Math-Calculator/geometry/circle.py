@@ -1,6 +1,6 @@
 from math import pi
 
-def circumfrence(radius):
+def circumference(radius):
     return 2*pi*radius
     
 def area(radius):
