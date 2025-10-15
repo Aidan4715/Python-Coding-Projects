@@ -1,2 +1,2 @@
-def getName():
+def getname():
     return __name__
