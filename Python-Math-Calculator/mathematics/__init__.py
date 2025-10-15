@@ -1,2 +1,2 @@
-from mathematics import whoami
+from mathematics.whoami import whoami
 __all__ = ['whoami']
