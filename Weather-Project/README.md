@@ -1,5 +1,5 @@
 
-## Program Instructions test
+## Program Instructions
 1. All the functions should accept the weather dictionary data structure as follows:
      ```
 	weather dictionary:
