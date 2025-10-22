@@ -17,19 +17,19 @@ def write_data(data, filename):
 
 
 def max_temperature(data):
-    return max(data.keys(), key=lambda k: data[k]['t'])
+    return int(max(data.keys(), key=lambda k: data[k]['t']))
 
 
 def min_temperature(data):
-    return min(data.keys(), key=lambda k: data[k]['t'])
+    return int(min(data.keys(), key=lambda k: data[k]['t']))
 
 
 def max_humidity(data):
-    return max(data.keys(), key=lambda k: data[k]['h'])
+    return int(max(data.keys(), key=lambda k: data[k]['h']))
 
 
 def min_humidity(data):
-    return min(data.keys(), key=lambda k: data[k]['h'])
+    return int(min(data.keys(), key=lambda k: data[k]['h']))
 
 
 def tot_rain(data, date):
@@ -66,10 +66,10 @@ def report(data, key):
 def report_historical(data):
     result = heading() + "\n"
     
-    max_temp_key = max_temperature(data)
-    min_temp_key = min_temperature(data)
-    max_hum_key = max_humidity(data)
-    min_hum_key = min_humidity(data)
+    max_temp_key = str(max_temperature(data))
+    min_temp_key = str(min_temperature(data))
+    max_hum_key = str(max_humidity(data))
+    min_hum_key = str(min_humidity(data))
     
     result += report(data, max_temp_key) + "\n"
     result += report(data, min_temp_key) + "\n"
