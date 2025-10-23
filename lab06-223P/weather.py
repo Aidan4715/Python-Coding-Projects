@@ -49,15 +49,14 @@ def heading():
 
 
 def report(data, key):
-    key_str = str(key)
-    readings = data[key_str]
+    readings = data[key]
     
-    year = key_str[0:4]
-    month = int(key_str[4:6])
-    day = key_str[6:8]
-    hour = key_str[8:10]
-    minute = key_str[10:12]
-    second = key_str[12:14]
+    year = key[0:4]
+    month = int(key[4:6])
+    day = key[6:8]
+    hour = key[8:10]
+    minute = key[10:12]
+    second = key[12:14]
     
     date_str = f"{month_name[month]} {day}, {year}"
     time_str = f"{hour}:{minute}:{second}"
