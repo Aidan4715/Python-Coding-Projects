@@ -8,7 +8,10 @@ def read_data(filename):
         return {}
     
     with open(filename, 'r') as f:
-        return json.load(f)
+        content = json.load(f)
+        if isinstance(content, str) and content.isdigit():
+            return int(content)
+        return content
 
 
 def write_data(data, filename):
@@ -37,7 +40,7 @@ def tot_rain(data, date):
     for key in data:
         if key.startswith(date):
             total += data[key]['r']
-    return int(total)
+    return total
 
 
 def heading():
@@ -66,10 +69,10 @@ def report(data, key):
 def report_historical(data):
     result = heading() + "\n"
     
-    max_temp_key = str(max_temperature(data))
-    min_temp_key = str(min_temperature(data))
-    max_hum_key = str(max_humidity(data))
-    min_hum_key = str(min_humidity(data))
+    max_temp_key = max_temperature(data)
+    min_temp_key = min_temperature(data)
+    max_hum_key = max_humidity(data)
+    min_hum_key = min_humidity(data)
     
     result += report(data, max_temp_key) + "\n"
     result += report(data, min_temp_key) + "\n"
