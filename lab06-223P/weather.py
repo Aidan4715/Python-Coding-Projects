@@ -17,19 +17,19 @@ def write_data(data, filename):
 
 
 def max_temperature(data):
-    return int(max(data.keys(), key=lambda k: data[k]['t']))
+    return max(data.keys(), key=lambda k: data[k]['t'])
 
 
 def min_temperature(data):
-    return int(min(data.keys(), key=lambda k: data[k]['t']))
+    return min(data.keys(), key=lambda k: data[k]['t'])
 
 
 def max_humidity(data):
-    return int(max(data.keys(), key=lambda k: data[k]['h']))
+    return max(data.keys(), key=lambda k: data[k]['h'])
 
 
 def min_humidity(data):
-    return int(min(data.keys(), key=lambda k: data[k]['h']))
+    return min(data.keys(), key=lambda k: data[k]['h'])
 
 
 def tot_rain(data, date):
