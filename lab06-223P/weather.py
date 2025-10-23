@@ -37,7 +37,7 @@ def tot_rain(data, date):
     for key in data:
         if key.startswith(date):
             total += data[key]['r']
-    return total
+    return int(total)
 
 
 def heading():
@@ -76,4 +76,4 @@ def report_historical(data):
     result += report(data, max_hum_key) + "\n"
     result += report(data, min_hum_key) + "\n"
     
-    return int(result)
+    return result
