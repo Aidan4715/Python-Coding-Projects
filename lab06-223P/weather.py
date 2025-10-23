@@ -76,4 +76,4 @@ def report_historical(data):
     result += report(data, max_hum_key) + "\n"
     result += report(data, min_hum_key) + "\n"
     
-    return result
+    return int(result)
