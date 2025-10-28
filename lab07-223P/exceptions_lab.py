@@ -1,3 +1,7 @@
+class PrimeNotFoundError(Exception):
+    pass
+
+
 def divide_numbers(numerator, denominator):
     try:
         number = numerator/denominator
@@ -13,3 +17,12 @@ def parse_int(value):
         print("Error: Invalid integer")
     else:
         return number
+
+def custom_exception(value):
+    loop = value - 1
+    for (i+2) in range(loop):
+        if(value%i = 0):
+            raise PrimeNotFoundError("Given number is not prime number")
+    return value
+
+    
