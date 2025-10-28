@@ -5,4 +5,11 @@ def divide_numbers(numerator, denominator):
         print("Error: Division by zero")
     else:
         return number
-        
+
+def parse_int(value):
+    try:
+        number = int(value)
+    except ValueError:
+        print("Error: Invalid integer")
+    else:
+        return number
