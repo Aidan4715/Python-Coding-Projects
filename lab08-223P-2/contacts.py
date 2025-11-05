@@ -21,9 +21,19 @@ class Contacts:
 
         self.dict[phone] = [first_name, last_name]
 
-        for names in self.dict.values():
-            for names in self.dict.values():
-                if ()
+        self.dict = dict(
+            sorted(
+                self.dict.items(), key = lambda item: (
+                    item[1][1].lower(), item[1][0].lower()
+                )
+            )
+        )
+        
+
+
+
+
+        
 
 
 
