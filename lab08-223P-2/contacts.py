@@ -28,7 +28,15 @@ class Contacts:
                 )
             )
         )
+
+        with open(self.file, 'w') as f:
+            json.dump(self.dict, f, indent=4)
+
+        return dict[phone]
         
+
+        
+
 
 
 
