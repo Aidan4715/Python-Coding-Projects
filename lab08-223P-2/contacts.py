@@ -35,8 +35,9 @@ class Contacts:
         return self.dict[phone]
 
 
+    
+    def delete_contact(self, phone):
         
-
 
 
 
