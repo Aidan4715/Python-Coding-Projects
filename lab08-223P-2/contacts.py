@@ -17,7 +17,7 @@ class Contacts:
     def add_contact(self, phone, first_name, last_name):
 
         if phone in self.dict:
-            print("error")
+            return "error"
 
         self.dict[phone] = [first_name, last_name]
 
@@ -37,6 +37,10 @@ class Contacts:
 
     
     def delete_contact(self, phone):
+        if phone not in self.dict:
+            return "error"
+        
+
         
 
 
