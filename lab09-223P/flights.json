@@ -1,0 +1,18 @@
+[
+    {
+        "origin": "SFO",
+        "destination": "SEA",
+        "flight_number": "UA200",
+        "departure": "1400",
+        "arrival": "1600",
+        "next_day": "Y"
+    },
+    {
+        "origin": "LAX",
+        "destination": "ORD",
+        "flight_number": "112",
+        "departure": "1000",
+        "arrival": "1100",
+        "next_day": "N"
+    }
+]
